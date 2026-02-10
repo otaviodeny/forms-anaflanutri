@@ -94,7 +94,7 @@ const ResultsScreen: React.FC = () => {
 
             <div className="grid gap-6">
               {[
-                { icon: 'intestine', color: 'text-primary', bg: 'bg-accent-peach/20', title: '1. CUIDE DO INTESTINO (Sua fábrica de humor)', desc: '90% da sua Serotonina é produzida no intestino! Coma fibras (frutas, verduras, aveia). O intestino preso ou inflamado aumenta a irritabilidade e a busca por compensação na comida.' },
+                { icon: 'spa', color: 'text-primary', bg: 'bg-accent-peach/20', title: '1. CUIDE DO INTESTINO (Sua fábrica de humor)', desc: '90% da sua Serotonina é produzida no intestino! Coma fibras (frutas, verduras, aveia). O intestino preso ou inflamado aumenta a irritabilidade e a busca por compensação na comida.' },
                 { icon: 'egg_alt', color: 'text-blue-500', bg: 'bg-blue-50', title: '2. PROTEÍNA', desc: 'Proteína na dieta, certos aminoácidos e até mesmo alguns tipos de gordura podem ajudar a aumentar a saciedade.' },
                 { icon: 'water_drop', color: 'text-cyan-500', bg: 'bg-cyan-50', title: '3. HIDRATAÇÃO', desc: 'Beba um copo d\'água devagar. A desidratação aumenta o cortisol e a ansiedade.' },
                 { icon: 'bedtime', color: 'text-purple-500', bg: 'bg-purple-50', title: '4. MANTER REGULARIDADE DO SONO', desc: 'Dada a forte conexão entre a privação de sono e o aumento dos hormônios da fome, é essencial priorizar um sono de qualidade (geralmente 7-8 horas para a maioria dos adultos).' },
@@ -102,13 +102,7 @@ const ResultsScreen: React.FC = () => {
               ].map((item, idx) => (
                 <div key={idx} className="bg-white p-6 rounded-3xl shadow-sm border border-accent-peach/20 flex gap-5 items-start">
                   <div className={`${item.bg} p-4 rounded-2xl ${item.color} flex-shrink-0`}>
-                    {item.icon === 'intestine' ? (
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className="w-8 h-8" fill="currentColor">
-                        <path d="M32 4c-3.3 0-6 2.7-6 6v6c0 2.2-1.8 4-4 4s-4-1.8-4-4v-2c0-3.3-2.7-6-6-6s-6 2.7-6 6v10c0 5.5 4.5 10 10 10h2c2.2 0 4 1.8 4 4s-1.8 4-4 4h-2c-3.3 0-6 2.7-6 6s2.7 6 6 6h4c5.5 0 10-4.5 10-10v-2c0-2.2 1.8-4 4-4s4 1.8 4 4v2c0 5.5 4.5 10 10 10h4c3.3 0 6-2.7 6-6s-2.7-6-6-6h-2c-2.2 0-4-1.8-4-4s1.8-4 4-4h2c5.5 0 10-4.5 10-10V14c0-3.3-2.7-6-6-6s-6 2.7-6 6v2c0 2.2-1.8 4-4 4s-4-1.8-4-4v-6c0-3.3-2.7-6-6-6z" />
-                      </svg>
-                    ) : (
-                      <span className="material-icons-round text-3xl">{item.icon}</span>
-                    )}
+                    <span className="material-icons-round text-3xl">{item.icon}</span>
                   </div>
                   <div>
                     <h4 className="font-display font-bold text-lg text-secondary">{item.title}</h4>
