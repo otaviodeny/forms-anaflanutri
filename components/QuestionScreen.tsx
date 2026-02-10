@@ -61,10 +61,7 @@ const QuestionScreen: React.FC<QuestionScreenProps> = ({
         <main className="flex-grow flex flex-col justify-center pb-8">
           <div className="bg-card-light shadow-xl rounded-2xl p-6 sm:p-8 relative border border-beige animate-fade-in-up">
 
-            {/* Sticker */}
-            <div className="absolute -top-4 -right-4 bg-white shadow-md transform rotate-6 px-3 py-1 border border-beige z-20 rounded-sm">
-              <span className="font-handwriting text-2xl text-primary font-bold">riflettere</span>
-            </div>
+            {/* Sticker removed */}
 
             {/* Profile Photo */}
             <div className="flex justify-center mb-6">
